@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>SonecazZ | Home</title>
 	<link rel="icon" href="img/icon.png">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<script type="text/javascript" src="sidebar.js"></script>
+
 </head>
-<body>
-	
-	<!-- Top Bar -->
-	<header>
-		<div class="container">
-			<div id="logo">
-				<h1>Sonecas<span class="highlight">zZ</span></h1>
+
+  <body>
+
+
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
+      <div class="container">
+        
+        <!-- header -->
+        <div class="navbar-header">
+
+          <a href="index.html" class="navbar-brand">
+            <span class="img-logo">SonecaszZ</span>
+          </a>
+
+        </div>
+
+        <!-- navbar -->
+        <div id="mySidebar" class="sidebar">
+          <ul class="nav navbar-nav navbar-right">
+			<li><a class="active" href="index.html">Home</a></li>
+            <li><a class="active" href="cadastro.html">Cadastro</a></li>
+            <li><a class="active" href="cadastro.html">Login</a></li>
+          </ul>
+		</div>
+
+		<div id="main">
+			<button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+		</div>
+
+      </div><!-- /container -->
+    </nav><!-- /nav -->
+
+    <div class="capa">
+      <div class="texto-capa">
+		<h1>Hotel SonecazZ</h1>
+		<h2>Tornando seus sonhos ainda melhores</h2>
+		<section id="newsletter">
+			<div class="container">
+				<h4>Inscreva-se para saber das novidades!</h4>
+				<form action="">
+					<input type="email" placeholder="Digite seu email aqui!">
+					<button type="submit" class="botao">Enviar</button>
+				</form>
 			</div>
-			<nav>
-				<ul>
-					<li><a class="active" href="index.html">Home</a></li>
-					<li><a class="active" href="index.html">Menu</a></li>
-					<li><a class="active" href="cadastro.html">Login/ Cadastro</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+		</section>
+      </div>
+	</div>
 
-	<!-- showcase -->
 
-	<section id="showcase">
-		<div class="container">
-			<h1>Hotel SonecazZ</h1>
-			<p>Sejam bem vindos ao site do Hotel SonecazZ! O melhor para tirar uma soneca!</p>
-		</div>
-	</section>
-
-	<!-- Newsletter -->
-
-	<section id="newsletter">
-		<div class="container">
-			<h1>Inscreva-se para saber das novidades!</h1>
-			<form action="">
-				<input type="email" placeholder="Digite seu email aqui!">
-				<button type="submit" class="botao">Enviar</button>
-			</form>
-		</div>
-	</section>
-
-	<!-- Boxes -->
-	
-	<!-- Conteudos -->
+    <!-- Conteudos -->
     <section id="servicos">
 		<div class="container">
 		  <div class="row">
@@ -81,21 +94,28 @@
   
 			<!-- servicos -->
 			<div class="col-md-6">
-			  <h2>Hostel Life</h2>
+			  <h2>Hotel SonecaszZ</h2>
   
 			  <h3>✌ Abraçar o inesperado.</h3>
-  
+			  <p>viva experiencia de um lugar novo e exótico</p>
+
 			  <h3>⚽ Playground de adultos, literalmente.</h3>
+			  <p>pscina, campo de futebol, campo de volei</p>
   
 			  <h3>🎒 Social. Amigos. Aventura.</h3>
+			  <p>quartos conjugados</p>
   
 			  <h3>🌏 Experiências sem fim.</h3>
-  
+			  <p>um dia com a natureza</p>
+
 			  <h3>✅ Tudo pode acontecer.</h3>
+			  <p>crie uma experiência extraordinaria</p>
   
 			  <h3>🎨 Design. Criatividade. Interação.</h3>
+			  <p>ambiente ecológico</p>
   
 			  <h3>🗺 Preço. Localização. Sociável.</h3>
+			  <p>preço e localização de fácil acesso</p>
 			  
 			</div>
   
@@ -103,11 +123,78 @@
 		</div>
 	  </section>
 
-	<!-- Footer -->
-	
-	<footer id="rodape">
+    <section id="recursos">
+      <div class="container">
+        <div class="row">
+          
+          <!-- recursos -->
+          <div class="col-md-4">
+            <h2>Fácil</h2>
+
+            <h3>Buscar</h3>
+            <p>Já sabe o que quer escutar? É só procurar e apertar o play.</p>
+
+            <h3>Navegar</h3>
+            <p>Veja os novos lançamentos, o que está bombando nas paradas e as melhores playlists para o seu momento.</p>
+
+            <h3>Descobrir</h3>
+            <p>Curta músicas novas toda segunda-feira com uma playlist personalizada pra você. Ou relaxe e curta uma das rádios.</p>
+          </div>
+
+          <!-- img recursos -->
+          <div class="col-md-8">
+
+            <div class="row rotacionar">
+              
+              <div class="col-md-6">
+                <img src="imagens/iphone1.png" class="img-responsive">
+              </div>
+
+              <div class="col-md-6">
+                <img src="imagens/iphone2.png" class="img-responsive">
+              </div>
+
+            </div><!-- /row -->
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodape -->
+    <footer id="rodape">
 		<div class="container">
 		  <div class="row">
+			
+			<div class="col-md-2">
+			  <span class="img-logo">Spotify</span>
+			</div>
+  
+			<div class="col-md-2">
+			  <h4>company</h4>
+			  <ul class="nav">
+				<li><a href="">Sobre</a></li>
+				<li><a href="">Empregos</a></li>
+			  </ul>
+			</div>
+  
+			<div class="col-md-2">
+			  <h4>comunidades</h4>
+			  <ul class="nav">
+				<li><a href="">Turismo</a></li>
+				<li><a href="">Lazer</a></li>
+				<li><a href="">Cidade</a></li>
+			  </ul>
+			</div>
+  
+			<div class="col-md-2">
+			  <h4>links uteis</h4>
+			  <ul class="nav">
+				<li><a href="">Ajuda</a></li>
+				<li><a href="">Novidades</a></li>
+			  </ul>
+			</div>
   
 			<div class="col-md-4">
 			  <ul class="nav">
@@ -121,5 +208,5 @@
 		</div>
 	  </footer>
 
-</body>
+  </body>
 </html>
