@@ -100,6 +100,7 @@ nav.navbar-transparente {
 	}
 	
 	#main {
+		position:fixed;
 	transition: margin-left .5s; /* If you want a transition effect */
 	padding: 20px;
 	}
